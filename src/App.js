@@ -1,5 +1,5 @@
 import { db, googleAuthProvider, firebase } from "./config/firebase";
-import Button from "./componens/Button";
+import Button from "./components/Button";
 
 function App() {
   const signInWithGoogle = async () => {
@@ -11,13 +11,12 @@ function App() {
     } catch (e) {
       console.error (e.message);
     }
-    return (
-      <div>
-            <button onClick = {signInWithGoogle} > Sing in with Google </button>
-      </div>
-    )
   }
-
+  return (
+    <div>
+          <Button onClick = {signInWithGoogle} > Sing in with Google </Button>
+    </div>
+  )
 };
 
 export default App;
