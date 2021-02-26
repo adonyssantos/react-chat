@@ -1,5 +1,5 @@
-//import { db } from "./config/firebase";
-import Button from "./components/Button";
+// import { db } from "./config/firebase";
+import { Button, Channel } from "./components/";
 import { signInWithGoogle, signOut } from "./login";
 import { useAuthState } from "./hooks";
 import { firebase } from "./config/firebase";
@@ -22,6 +22,7 @@ function App() {
         <>
           <Button onClick={signOut}> Logout</Button>
           <p> Bienvenidos al CHAT!</p>
+          <Channel user={user} />
         </>
       ) : (
         <Button onClick={signInWithGoogle}> Sing in with Google </Button>
