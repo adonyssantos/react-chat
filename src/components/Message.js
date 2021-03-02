@@ -6,7 +6,7 @@ const formatDate = date => {
         formattedDate = formatRelative(date, new Date());
 
         formattedDate = 
-            formattedDate.charAt(0).toUpperCase() + formatDate.slice(1);
+            formattedDate.charAt(0).toUpperCase() + formattedDate.slice(1);
     }
     return formattedDate;
 };

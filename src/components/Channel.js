@@ -8,6 +8,23 @@ const Channel = ({ user = null }) => {
   const [messages, setMessages] = useState([]);
 
   useEffect(() => {
+    const query = db.collection('messages')
+    .orderBy('createdAt')
+    .limit(100);
+
+const unsubscribe = query.onSnapshot(querySnapshot => {
+    //Obtiene todos los mensajes desde la bd con su ID.
+    const data = querySnapshot.docs.map(doc => ({
+        ...doc.data(),
+        id: doc.id,
+    }));
+    // Actualizo los mensjaes obtenidos desde la bd. 
+    setMessages(data);
+
+});
+//CleanUp
+return unsubscribe;
+
   }, [])
 
   const { uid, displayName, photoURL} = user;
@@ -73,10 +90,9 @@ useEffect(() => {
                     </button>
                 </form>
             </>
-    );
- };
+    );  
+};
 
-  
 export default Channel;
 
   //const query = db.collection("messages").orderBy("createdAt").limit(100);
