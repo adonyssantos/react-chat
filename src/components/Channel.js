@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import { db } from "../config/firebase";
+import { useEffect, useState, useRef } from "react";
+import { db, firebase } from "../config/firebase";
 import Message from './Message';
 
 const Channel = ({ user = null }) => {

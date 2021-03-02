@@ -32,7 +32,7 @@ const Message = ({
                 ) : null}
                 {displayName ? <p>{displayName}</p> : null}
                 {createdAt?.seconds ? (
-                    <span>{formatDate(new Date(createdAt,seconds * 1000))}</span>
+                    <span>{formatDate(new Date(createdAt.seconds * 1000))}</span>
                 ) : null}
                 <p>{text}</p>
             </div>
