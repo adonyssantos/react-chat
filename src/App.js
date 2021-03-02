@@ -1,9 +1,9 @@
-import { db } from "./config/firebase";
+//import { db } from "./config/firebase";
 import { Button, Channel } from "./components/";
 import { signInWithGoogle, signOut } from "./login";
 import { useAuthState } from "./hooks";
 import { firebase } from "./config/firebase";
-console.log(db);
+//console.log(db);
 
 function App() {
   const { user, itializing } = useAuthState(firebase.auth());
