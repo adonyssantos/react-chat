@@ -21,12 +21,13 @@ function App() {
       {renderLoading()}
       {user ? (
         <>
-          <Button onClick={signOut}> Logout</Button>
-          <p> Bienvenidos al CHAT!</p>
-          <Channel user={user} />
+          <Button onClick={signOut}> Salir </Button>
+          <p className="hola"> Bienvenidos al CHAT!</p>
+          <h1>Hola</h1>
+          <Channel user={user}/>
         </>
       ) : (
-        <Button onClick={signInWithGoogle}> Sign in with Google </Button>
+        <Button onClick={signInWithGoogle}> Iniciar Sesión </Button>
       )}
     </div>
   );
