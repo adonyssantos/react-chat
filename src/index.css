@@ -1,4 +1,10 @@
-.logo{
+/* Por cada componente vamos a crear un documento.css diferente y lo importamos aquí */
+@import './App.css';
+@import './style/Button.css';
+
+
+/* Para esto hay que crear un archivo aparte */
+/* .logo{
   margin: 1%;
   margin-left: 35%;
   width: 25%;
@@ -31,4 +37,4 @@ main{
   margin: 6%;
   background: yellow;
   border-radius: 10px;
-}
+} */
