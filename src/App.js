@@ -22,8 +22,7 @@ function App() {
       {user ? (
         <>
           <Button onClick={signOut}> Salir </Button>
-          <p className="hola"> Bienvenidos al CHAT!</p>
-          <h1>Hola</h1>
+          <p> Bienvenidos al CHAT!</p>
           <Channel user={user}/>
         </>
       ) : (
