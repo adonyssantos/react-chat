@@ -1,0 +1,412 @@
+/*------------------------------- Cabecera -----------------------------------*/
+
+header {
+  width: 100%;
+  margin-bottom: 1%;
+  margin-top: 1.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header img {
+  width: 22%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 4px 4px 5px rgba(255, 248, 248, 0.308);
+  border: 0.5px rgba(255, 255, 255, 0.219) solid;
+}
+
+/*-------------------------------- Contenido Principal --------------------------------------------*/
+
+main {
+  margin: 2% auto;
+  width: 50%;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.692);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3%;
+  box-shadow: 8px 8px 8px rgba(255, 251, 251, 0.301);
+  border: 0.5px rgba(0, 0, 0, 0.616) solid;
+}
+
+main h1 {
+  background: rgb(14, 15, 15);
+  color: white;
+  width: 100%;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  box-sizing: border-box;
+  padding: 2.5%;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 2vw;
+  font-weight: bold;
+}
+
+main img {
+  width: 30%;
+  height: auto;
+  margin-bottom: 2%;
+}
+
+/*------------------------- Botón Login - Login Out -------------------------------*/
+
+#root button {
+  background: rgba(30, 102, 197, 0.658);
+  font-family: sans-serif;
+  font-size: 1.5vw !important;
+  border-radius: 5px;
+  box-sizing: border-box;
+  box-shadow: 0px -4px 1px rgba(0, 0, 0, 0.603) inset;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  padding: 5px 15px;
+}
+
+#root button:hover {
+  box-shadow: 0px -5px 1.5px rgba(0, 0, 0, 0.603) inset;
+}
+
+/*----------------------------- Ancla -------------------------------------*/
+
+a.ancla {
+  position: fixed;
+  width: 4%;
+  bottom: 5%;
+  right: 5%;
+}
+
+a.ancla img {
+  border-radius: 50%;
+  border: rgba(0, 0, 0, 0.63) solid 1px;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0.1px 0.1px 5px white;
+}
+
+a.ancla img:hover {
+  box-shadow: 0.1px 0.1px 10px white;
+}
+
+/*----------------------- Mensajes --------------------------*/
+
+h2.chat {
+  text-align: center;
+}
+
+div.user {
+  padding: 2%;
+  box-sizing: border-box;
+  margin: 3%;
+  background-color: rgba(63, 159, 189, 0.767);
+  border-radius: 10px;
+  border: rgba(0, 0, 0, 0.377) 0.1px solid;
+}
+
+img.photo-user {
+  width: 8%;
+  border-radius: 50%;
+  border: rgba(0, 0, 0, 0.705) 0.5px solid;
+}
+
+span.name-user {
+  color: black;
+  margin: 2%;
+  font-weight: 500;
+  font-size: 1.4vw;
+}
+
+span.date-user {
+  display: block;
+  margin: 2%;
+  float: right;
+  font-size: 1vw;
+  color: rgb(26, 23, 23);
+  text-align: end;
+  font-style: italic;
+}
+
+p.mensaje-user {
+  background-color: rgba(255, 248, 220, 0.719);
+  border: rgba(4, 4, 124, 0.534) solid 0.5px;
+  padding: 2%;
+  border-radius: 8px;
+  text-align: justify;
+  margin: 0;
+  font-size: 1.2vw;
+}
+
+/*------------------------------ Enviar Mensajes: ----------------------------------*/
+
+form {
+  width: 100%;
+  height: 10%;
+}
+
+input.mensaje {
+  position: fixed;
+  bottom: 0%;
+  width: 40%;
+  height: 6.5%;
+  background-color: white;
+  border-radius: 8px;
+  border: black solid 1px;
+  font-size: 1.2vw;
+}
+
+input.mensaje:focus {
+  outline: none;
+  border: black solid 2px;
+}
+
+input.mensaje::placeholder {
+  padding-left: 5px;
+}
+
+button.btn-send {
+  position: fixed;
+  bottom: 0%;
+  left: 65%;
+  width: 10%;
+  height: 6.5%;
+  font-size: 1.4vw;
+  text-align: center;
+  background: rgb(14, 15, 15) !important;
+  color: white;
+  border: rgba(255, 255, 255, 0.479) solid 1px !important;
+  cursor: pointer;
+}
+
+button.btn-send:hover {
+  background: rgb(21, 24, 24) !important;
+}
+
+/*----------------------------- Media Queries ------------------------------------*/
+
+@media (max-width: 800px) {
+  /*------------------------------- Estilos Generales ---------------------------*/
+
+  html {
+    width: 100%;
+    height: 100%;
+  }
+
+  body {
+    width: 100%;
+    background: url(https://cdn.wallpapersafari.com/1/29/uOV5k9.jpg);
+    background-size: 100%;
+    background-position-y: -50px;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contenedor {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /*------------------------------- Cabecera -----------------------------------*/
+
+  header {
+    width: 100%;
+    margin-bottom: 1%;
+    margin-top: 1.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header img {
+    width: 52%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 4px 4px 5px rgba(255, 248, 248, 0.308);
+    border: 0.5px rgba(255, 255, 255, 0.219) solid;
+  }
+
+  /*-------------------------------- Contenido Principal --------------------------------------------*/
+
+  main {
+    margin: 2% auto;
+    width: 90%;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.692);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3%;
+    box-shadow: 8px 8px 8px rgba(255, 251, 251, 0.301);
+    border: 0.5px rgba(0, 0, 0, 0.616) solid;
+  }
+
+  main h1 {
+    background: rgb(14, 15, 15);
+    color: white;
+    width: 100%;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    box-sizing: border-box;
+    padding: 3.5%;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 3.5vw;
+    font-weight: bold;
+  }
+
+  main img {
+    width: 35%;
+    height: auto;
+    margin-bottom: 2%;
+  }
+
+  /*------------------------- Botón Login - Login Out -------------------------------*/
+
+  #root button {
+    background: rgba(30, 102, 197, 0.658);
+    font-family: sans-serif;
+    font-size: 2.5vw !important;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 0px -4px 1px rgba(0, 0, 0, 0.603) inset;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    padding: 5px 15px;
+  }
+
+  #root button:hover {
+    box-shadow: 0px -5px 1.5px rgba(0, 0, 0, 0.603) inset;
+  }
+
+  /*----------------------------- Ancla -------------------------------------*/
+
+  a.ancla {
+    position: fixed;
+    width: 7%;
+    bottom: 6%;
+    right: 1%;
+  }
+
+  a.ancla img {
+    border-radius: 50%;
+    border: rgba(0, 0, 0, 0.63) solid 1px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0.1px 0.1px 5px white;
+  }
+
+  a.ancla img:hover {
+    box-shadow: 0.1px 0.1px 10px white;
+  }
+
+  /*----------------------- Mensajes --------------------------*/
+
+  h2.chat {
+    text-align: center;
+  }
+
+  div.user {
+    padding: 2%;
+    box-sizing: border-box;
+    margin: 3%;
+    background-color: rgba(63, 159, 189, 0.767);
+    border-radius: 10px;
+    border: rgba(0, 0, 0, 0.377) 0.1px solid;
+  }
+
+  img.photo-user {
+    width: 8%;
+    border-radius: 50%;
+    border: rgba(0, 0, 0, 0.705) 0.5px solid;
+  }
+
+  span.name-user {
+    color: black;
+    margin: 2%;
+    font-weight: 500;
+    font-size: 3.4vw;
+  }
+
+  span.date-user {
+    display: block;
+    margin: 2%;
+    float: right;
+    font-size: 2vw;
+    color: rgb(26, 23, 23);
+    text-align: end;
+    font-style: italic;
+  }
+
+  p.mensaje-user {
+    background-color: rgba(255, 248, 220, 0.719);
+    border: rgba(4, 4, 124, 0.534) solid 0.5px;
+    padding: 2%;
+    border-radius: 8px;
+    text-align: justify;
+    margin: 0;
+    font-size: 3.2vw;
+  }
+
+  /*------------------------------ Enviar Mensajes: ----------------------------------*/
+
+  form {
+    width: 100%;
+    height: 10%;
+  }
+
+  input.mensaje {
+    position: fixed;
+    bottom: 0%;
+    width: 70%;
+    height: 4.5%;
+    background-color: white;
+    border-radius: 8px;
+    border: black solid 1px;
+    font-size: 3.2vw;
+  }
+
+  input.mensaje:focus {
+    outline: none;
+    border: black solid 2px;
+  }
+
+  input.mensaje::placeholder {
+    padding-left: 5px;
+  }
+
+  button.btn-send {
+    position: fixed;
+    bottom: 0%;
+    left: 75%;
+    width: 20%;
+    height: 4.5%;
+    font-size: 3.4vw;
+    text-align: center;
+    background: rgb(14, 15, 15) !important;
+    color: white;
+    border: rgba(255, 255, 255, 0.479) solid 1px !important;
+    cursor: pointer;
+  }
+
+  button.btn-send:hover {
+    background: rgb(21, 24, 24) !important;
+  }
+}
