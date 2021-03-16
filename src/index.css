@@ -4,12 +4,11 @@
 /*------------------------------- Estilos Generales ---------------------------*/
 
 html{
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
 }
 
 body{
-  width: 100%;
   background: url(https://www.xtrafondos.com/wallpapers/resoluciones/19/noche-cielo-estrellas-y-cometa_1920x1080_3036.jpg);
   background-size: 100%;
   background-position-y: -50px;
