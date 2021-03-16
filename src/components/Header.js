@@ -6,8 +6,8 @@ import '../styles/Header.css';
 const Header = () => {
 	return (
 		<header>
-				<Logo />
-				<Button onClick={signOut}> Salir </Button>
+			<Logo />
+			<Button onClick={signOut}> Salir </Button>
 		</header>
 	)
 };
