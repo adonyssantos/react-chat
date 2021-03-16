@@ -1,4 +1,5 @@
-@import './styles/style.css';
+@import './style.css'; /*Esto es temporal*/
+@import './Header.css';
 @import url('https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css');
 
 /*------------------------------- Estilos Generales ---------------------------*/
@@ -8,19 +9,18 @@ html{
   height: 100vh;
 }
 
-body{
+body {
+  margin: auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   background: url(https://www.xtrafondos.com/wallpapers/resoluciones/19/noche-cielo-estrellas-y-cometa_1920x1080_3036.jpg);
   background-size: cover;
   background-position-y: -50px;
   background-attachment: fixed;
   display: flex;
   align-items: center;
-  justify-content: center;
-}
-
-.contenedor{
-  margin-top: 2%;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
 }

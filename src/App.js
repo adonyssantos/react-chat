@@ -1,6 +1,7 @@
 import { Channel, Logo, Login, Header } from "./components/";
 import { useAuthState } from "./hooks";
 import { firebase } from "./config/firebase";
+import './styles/App.css';
 
 function App() {
   const { user, itializing } = useAuthState(firebase.auth());
