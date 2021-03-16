@@ -23,7 +23,7 @@ header {
   align-items: center;
 }
 
-header img {
+/* header img {
   width: 22%;
   height: 100%;
   display: flex;
@@ -32,7 +32,7 @@ header img {
   border-radius: 10px;
   box-shadow: 4px 4px 5px rgba(255, 248, 248, 0.308);
   border: 0.5px rgba(255, 255, 255, 0.219) solid;
-}
+} */
 
 /*-------------------------------- Contenido Principal --------------------------------------------*/
 
@@ -98,7 +98,7 @@ a.ancla {
   bottom: 5%;
   right: 5%;
 }
-
+/* 
 a.ancla img {
   border-radius: 50%;
   border: rgba(0, 0, 0, 0.63) solid 1px;
@@ -109,7 +109,7 @@ a.ancla img {
 
 a.ancla img:hover {
   box-shadow: 0.1px 0.1px 10px white;
-}
+} */
 
 /*----------------------- Mensajes --------------------------*/
 
@@ -243,7 +243,7 @@ button.btn-send:hover {
     align-items: center;
   }
 
-  header img {
+  /* header img {
     width: 52%;
     height: 100%;
     display: flex;
@@ -252,7 +252,7 @@ button.btn-send:hover {
     border-radius: 10px;
     box-shadow: 4px 4px 5px rgba(255, 248, 248, 0.308);
     border: 0.5px rgba(255, 255, 255, 0.219) solid;
-  }
+  } */
 
   /*-------------------------------- Contenido Principal --------------------------------------------*/
 
@@ -285,11 +285,11 @@ button.btn-send:hover {
     font-weight: bold;
   }
 
-  main img {
+  /* main img {
     width: 35%;
     height: auto;
     margin-bottom: 2%;
-  }
+  } */
 
   /*------------------------- Botón Login - Login Out -------------------------------*/
 
@@ -319,7 +319,7 @@ button.btn-send:hover {
     right: 1%;
   }
 
-  a.ancla img {
+  /* a.ancla img {
     border-radius: 50%;
     border: rgba(0, 0, 0, 0.63) solid 1px;
     width: 100%;
@@ -329,7 +329,7 @@ button.btn-send:hover {
 
   a.ancla img:hover {
     box-shadow: 0.1px 0.1px 10px white;
-  }
+  } */
 
   /*----------------------- Mensajes --------------------------*/
 
