@@ -17,9 +17,9 @@ La actividad Fork le permite crear varias transiciones salientes para llevar a c
 
 Por ejemplo, puede utilizar la actividad después de una consulta para realizar dos acciones en paralelo:
 
-Guarde el resultado de la consulta en una audiencia,
-Ejecute una segmentación en el resultado para entregar varios envíos.
-También puede utilizar la actividad en el contexto de la creación de contenido y la automatización de entrega.
+- Guarde el resultado de la consulta en una audiencia,
+- Ejecute una segmentación en el resultado para entregar varios envíos.
+- También puede utilizar la actividad en el contexto de la creación de contenido y la automatización de entrega.
 
 ## Flujo de Trabajo de un Colaborador
 
