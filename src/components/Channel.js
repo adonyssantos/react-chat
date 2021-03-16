@@ -1,6 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 import { db, firebase } from "../config/firebase";
 import Message from './Message';
+import '../styles/Channel.css';
 
 const Channel = ({ user = null }) => {
   //console.log(user);

@@ -1,8 +1,8 @@
+import '../styles/Logo.css';
+
 const Logo = () => {
   return (
-    <header>
-      <img src="https://i.imgur.com/k0lpehA.gif" alt=""></img>;
-    </header>
+      <img src="https://i.imgur.com/k0lpehA.gif" alt=""></img>
   );
 };
 

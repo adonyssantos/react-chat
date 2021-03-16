@@ -1,3 +1,8 @@
+/*Estos estilos hay que pasarlo al archvo *.css que corresponda con su componente y despues borrar este archivo.
+
+Ej: Los estilos del Boton en Button.css
+*/
+
 /*------------------------------- Contenedor -----------------------------------*/
 .contenedor{
   margin-top: 2%;

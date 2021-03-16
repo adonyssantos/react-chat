@@ -1,5 +1,6 @@
 import { signInWithGoogle } from "../login";
 import Button from "./Button";
+import '../styles/Login.css';
 
 const Login = () => {
 	return (

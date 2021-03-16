@@ -1,15 +1,14 @@
 import { signOut } from "../login";
 import Button from "./Button";
 import Logo from './Logo'
+import '../styles/Header.css';
 
 const Header = () => {
 	return (
-		<>
-			<div className='menu'>
+		<header>
 				<Logo />
 				<Button onClick={signOut}> Salir </Button>
-			</div>
-		</>
+		</header>
 	)
 };
 
