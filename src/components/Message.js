@@ -20,21 +20,20 @@ const Message = ({
 }) => {
     if (!text) return null;
         return(
-            <div>
+            <div className="user">
                 {photoURL ? (
                     <img 
+                    className="photo-user"
                     src={photoURL}
                     alt="Avatar"
-                    className="rounded-full mr-4"
-                    width={45}
-                    height={45}
+                    title="{text}"
                     />
                 ) : null}
-                {displayName ? <p>{displayName}</p> : null}
+                {displayName ? <span className="name-user">{displayName}</span> : null}
                 {createdAt?.seconds ? (
-                    <span>{formatDate(new Date(createdAt.seconds * 1000))}</span>
+                    <span className="date-user">{formatDate(new Date(createdAt.seconds * 1000))}</span>
                 ) : null}
-                <p>{text}</p>
+                <p className="mensaje-user">{text}</p>
             </div>
         );;
 };

@@ -18,7 +18,7 @@ const unsubscribe = query.onSnapshot(querySnapshot => {
         ...doc.data(),
         id: doc.id,
     }));
-    // Actualizo los mensjaes obtenidos desde la bd. 
+    // Actualizo los mensajes obtenidos desde la bd. 
     setMessages(data);
 
 });
@@ -65,28 +65,28 @@ useEffect(() => {
 
     return(
         <>
-            <ul>
                 {messages.map(message => (
-                    <li key={message.id}>
+                    <p key={message.id}>
                         <Message {...message} />
-                    </li>
+                    </p>
                 ))}
-            </ul>
 
             <form
                 onSubmit={handleOnSubmit}>
-                    <input
+                    <input 
+                    className ="mensaje"
                     ref={inputRef}
                     type="text"
                     value={newMessage}
                     onChange={handleMessageOnChange}
                     placeholder= "Escribe tu mensaje aqui..."
+                    autoComplete="off"
                     />
-                    <button 
+                    <button className="btn-send"
                     type="submit"
                     disabled={!newMessage}
                     >
-                        Send
+                        Enviar
                     </button>
                 </form>
             </>
@@ -94,27 +94,3 @@ useEffect(() => {
 };
 
 export default Channel;
-
-  //const query = db.collection("messages").orderBy("createdAt").limit(100);
-
-    //const unsubscribe = query.onSnapshot((querySnapshot) => {
- //     const data = querySnapshot.docs.map((doc) => ({
- //       ...doc.data(),
- //       id: doc.id,
- //     }));
-//
- //     setMessages(data);
- //   });
-//
- //   return unsubscribe;
- // }, []);
-//
- // return (
- //   <ul>
- //     {messages.map((message) => (
- //       <li key={message.id}>{message.text}</li>
- //     ))}
- //   </ul>
- // );
-//};
-//
