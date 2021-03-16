@@ -10,7 +10,7 @@ html{
 
 body{
   background: url(https://www.xtrafondos.com/wallpapers/resoluciones/19/noche-cielo-estrellas-y-cometa_1920x1080_3036.jpg);
-  background-size: 100%;
+  background-size: cover;
   background-position-y: -50px;
   background-attachment: fixed;
   display: flex;

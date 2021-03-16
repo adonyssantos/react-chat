@@ -1,5 +1,4 @@
-import { Button, Channel, Logo, Login } from "./components/";
-import { signOut } from "./login";
+import { Channel, Logo, Login, Header } from "./components/";
 import { useAuthState } from "./hooks";
 import { firebase } from "./config/firebase";
 
@@ -19,12 +18,11 @@ function App() {
       {renderLoading()}
       {user ? (
         <>
-          <Button onClick={signOut}> Salir </Button>
-          <Channel user={user}/>
+          <Header />
+          <Channel user={user} />
         </>
       ) : (
         <>
-          {/* <Button onClick={signInWithGoogle}>Iniciar Sesión</Button> */}
           <Logo />
           <Login />
         </>
