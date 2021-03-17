@@ -1,0 +1,38 @@
+/*------------------------------ Enviar Mensajes: ----------------------------------*/
+input.mensaje {
+    position: fixed;
+    bottom: 0%;
+    width: 40%;
+    height: 6.5%;
+    background-color: white;
+    border-radius: 8px;
+    border: black solid 1px;
+    font-size: 1.2vw;
+  }
+  
+  input.mensaje:focus {
+    outline: none;
+    border: black solid 2px;
+  }
+  
+  input.mensaje::placeholder {
+    padding-left: 5px;
+  }
+  
+  button.btn-send {
+    position: fixed;
+    bottom: 0%;
+    left: 65%;
+    width: 10%;
+    height: 6.5%;
+    font-size: 1.4vw;
+    text-align: center;
+    background: rgb(14, 15, 15) !important;
+    color: white;
+    border: rgba(255, 255, 255, 0.479) solid 1px !important;
+    cursor: pointer;
+  }
+  
+  button.btn-send:hover {
+    background: rgb(21, 24, 24) !important;
+  }
