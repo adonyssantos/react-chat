@@ -1,4 +1,4 @@
-import { Channel, Logo, Login, Header } from "./components/";
+import { Channel, Login, Header } from "./components/";
 import { useAuthState } from "./hooks";
 import { firebase } from "./config/firebase";
 import './App.css';
