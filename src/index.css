@@ -2,6 +2,10 @@
 
 @import url('https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css');
 
+/*------------------------------- Importamos Bootstrap ---------------------------*/
+
+@import './styles/colors.css';
+
 /*------------------------------- Estilos Generales ---------------------------*/
 
 html{
