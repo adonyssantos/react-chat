@@ -13,7 +13,6 @@ function App() {
         </div>
       );
   };
-
   return (
     <div>
       {renderLoading()}

@@ -53,9 +53,6 @@ return unsubscribe;
         }
       };
   
-
-  
-
 const inputRef = useRef();
 useEffect(() => {
     if (inputRef.current){
