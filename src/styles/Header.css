@@ -1,4 +1,14 @@
-/* div {
-	background-color: brown;
-	display: inline;
-} */
+header.menu{
+	width: 100vw;
+	height: 10%;
+	background-color: rgba(0, 0, 0, 0.959);
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: .3%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	border-bottom: 1px solid rgba(255, 252, 252, 0.274);
+}

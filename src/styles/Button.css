@@ -22,8 +22,16 @@ main button{
     background: rgba(30, 102, 197, 0.658);
 }
 
+/*-------------------------------- Emoji - Botón --------------------------------*/
+
+button.emoji{
+  width: ;
+}
+
  /*------------------------ Salir de Sección - Botón ----------------------------*/
   
 header button{
-    background: rgb(228, 63, 34);
+    background: rgba(255, 79, 48, 0.788);
+    margin-right: 1.5%;
 }
+
