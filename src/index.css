@@ -2,27 +2,36 @@
 
 @import url('https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css');
 
-@import './styles/temp.css'; /*Esto es temporal*/
-
 /*------------------------------- Estilos Generales ---------------------------*/
 
 html{
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 }
 
-body {
+body{
+  width: 100%;
+  /* height: 100%; */
+
   margin: auto;
+
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
   background: url(https://www.xtrafondos.com/wallpapers/resoluciones/19/noche-cielo-estrellas-y-cometa_1920x1080_3036.jpg);
   background-size: cover;
   background-position-y: -50px;
   background-attachment: fixed;
+
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+body ::selection{
+  background-color: black;
+  color: white;
 }

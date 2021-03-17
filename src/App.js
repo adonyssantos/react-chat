@@ -23,7 +23,7 @@ function App() {
         </>
       ) : (
         <>
-          <Logo />
+          {/* <Logo /> */}
           <Login />
         </>
       )}

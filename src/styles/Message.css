@@ -1,0 +1,48 @@
+/*----------------------- Mensajes --------------------------*/
+
+h2.chat {
+    text-align: center;
+}
+  
+div.user {
+    padding: 1%;
+    box-sizing: border-box;
+    margin: 2%;
+    background-color: rgba(63, 160, 189, 0.699);
+    border-radius: 10px;
+    border: rgba(216, 213, 213, 0.377) 0.1px solid;
+}
+
+img.photo-user {
+    width: 5%;
+    border-radius: 50%;
+    border: rgba(0, 0, 0, 0.705) 0.5px solid;
+    margin-bottom: 1%;
+}
+
+span.name-user {
+    color: black;
+    margin: 1%;
+    font-weight: 500;
+    font-size: 1.4vw;
+}
+
+span.date-user {
+    display: block;
+    margin: 1%;
+    float: right;
+    font-size: 1vw;
+    color: rgb(26, 23, 23);
+    text-align: end;
+    font-style: italic;
+}
+
+p.mensaje-user {
+    background-color: rgba(255, 248, 220, 0.719);
+    border: rgba(4, 4, 124, 0.534) solid 0.5px;
+    padding: 1%;
+    border-radius: 8px;
+    text-align: justify;
+    margin: 0;
+    font-size: 1.2vw;
+}

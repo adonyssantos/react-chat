@@ -1,0 +1,35 @@
+main{
+    width: 65%;
+    height: 50%;
+    margin: 0 auto;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.692);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3%;
+    box-shadow: 8px 8px 8px rgba(255, 251, 251, 0.301);
+    border: 0.5px rgba(0, 0, 0, 0.616) solid;
+}
+
+main h1{
+    background: rgb(14, 15, 15);
+    color: white;
+    width: 100%;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    box-sizing: border-box;
+    padding: 1.5%;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 2vw;
+    font-weight: bold;
+}
+  
+main img{
+    width: 25%;
+    height: auto;
+    margin-bottom: 2%;
+}
