@@ -1,10 +1,9 @@
 import { Channel, Login, Header } from "./components/";
 import { useAuthState } from "./hooks";
 import { firebase } from "./config/firebase";
-import './App.css';
-import renderLoading from './functions/renderLoading';
-import fixSroll from './functions/fixSroll';
-
+import "./App.css";
+import renderLoading from "./functions/renderLoading";
+import fixSroll from "./functions/fixSroll";
 
 function App() {
   const { itializing, user } = useAuthState(firebase.auth());
