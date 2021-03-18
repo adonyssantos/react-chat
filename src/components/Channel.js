@@ -80,6 +80,7 @@ useEffect(() => {
                     placeholder= "Escribe tu mensaje aqui..."
                     autoComplete="off"
                     />
+                    <button className="emoji">Emoji</button>
                     <button className="btn-send"
                     type="submit"
                     disabled={!newMessage}

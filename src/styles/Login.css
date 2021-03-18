@@ -1,7 +1,7 @@
 main{
     width: 65%;
     height: 50%;
-    margin: 0 auto;
+    margin: 8% auto;
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.692);
     box-sizing: border-box;
@@ -14,8 +14,8 @@ main{
     border: 0.5px rgba(0, 0, 0, 0.616) solid;
 }
 
-main h1{
-    background: rgb(14, 15, 15);
+main h2{
+    background: rgb(27, 29, 29);
     color: white;
     width: 100%;
     border-top-left-radius: inherit;

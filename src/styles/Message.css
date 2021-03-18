@@ -21,7 +21,7 @@ img.photo-user {
 }
 
 span.name-user {
-    color: black;
+    color: rgb(17, 17, 17);
     margin: 1%;
     font-weight: 500;
     font-size: 1.4vw;
@@ -35,6 +35,9 @@ span.date-user {
     color: rgb(26, 23, 23);
     text-align: end;
     font-style: italic;
+    padding: .2%;
+    border-radius: 5%;
+    background-color: rgba(255, 255, 255, 0.329);
 }
 
 p.mensaje-user {
