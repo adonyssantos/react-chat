@@ -2,6 +2,7 @@ import { useEffect, useState, useRef } from "react";
 import { db, firebase } from "../config/firebase";
 import Message from './Message';
 import '../styles/Channel.css';
+import fixSroll from '../functions/fixSroll';
 
 const Channel = ({ user = null }) => {
   //console.log(user);
@@ -87,6 +88,7 @@ useEffect(() => {
                     <button className="boton btn-send"
                     type="submit"
                     disabled={!newMessage}
+                    onClick={fixSroll()}
                     > Enviar </button>
                 </form>
             </>
