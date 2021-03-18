@@ -41,3 +41,19 @@ body ::selection{
   color: white;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f2f2f2; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #555555; 
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #242424; 
+}
