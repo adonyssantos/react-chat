@@ -63,11 +63,13 @@ useEffect(() => {
 
     return(
         <>
-                {messages.map(message => (
-                    <p key={message.id}>
-                        <Message {...message} />
-                    </p>
-                ))}
+            <div className="messages-container">
+              {messages.map(message => (
+                <p key={message.id}>
+                  <Message {...message} />
+                </p>
+              ))}
+            </div>
 
             <form className="form" onSubmit={handleOnSubmit}>
                     <input 

@@ -1,4 +1,8 @@
 /*------------------------------ Enviar Mensajes: ----------------------------------*/
+div.messages-container {
+  margin-bottom: 6%;
+}
+
 
 .form{
   width: 100%;
