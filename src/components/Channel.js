@@ -69,8 +69,7 @@ useEffect(() => {
                     </p>
                 ))}
 
-            <form
-                onSubmit={handleOnSubmit}>
+            <form className="form" onSubmit={handleOnSubmit}>
                     <input 
                     className ="mensaje"
                     ref={inputRef}
@@ -80,13 +79,13 @@ useEffect(() => {
                     placeholder= "Escribe tu mensaje aqui..."
                     autoComplete="off"
                     />
-                    <button className="emoji">Emoji</button>
-                    <button className="btn-send"
+
+                    <button className="btn-emoji"></button>
+
+                    <button className="boton btn-send"
                     type="submit"
                     disabled={!newMessage}
-                    >
-                        Enviar
-                    </button>
+                    > Enviar </button>
                 </form>
             </>
     );  
