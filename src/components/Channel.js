@@ -76,7 +76,7 @@ const Channel = ({ user = null }) => {
           autoComplete="off"
         />
 
-        <button className="btn-emoji"></button>
+        {/* <button className="btn-emoji"></button> */}
 
         <button
           className="boton btn-send"
