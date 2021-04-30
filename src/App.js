@@ -1,32 +1,26 @@
-//import { db } from "./config/firebase";
-import { Button, Channel } from "./components/";
-import { signInWithGoogle, signOut } from "./login";
+import { Channel, Login, Header } from "./components/";
 import { useAuthState } from "./hooks";
 import { firebase } from "./config/firebase";
-//console.log(db);
+import "./App.css";
+import renderLoading from "./functions/renderLoading";
+import fixSroll from "./functions/fixSroll";
 
 function App() {
-  const { user, itializing } = useAuthState(firebase.auth());
-  const renderLoading = () => {
-    if (itializing)
-      return (
-        <div>
-          <h3>Loadinng...</h3>
-        </div>
-      );
-  };
-
+  const { itializing, user } = useAuthState(firebase.auth());
   return (
     <div>
-      {renderLoading()}
+      {renderLoading(itializing)}
       {user ? (
         <>
-          <Button onClick={signOut}> Logout</Button>
-          <p> Bienvenidos al CHAT!</p>
+          <Header />
           <Channel user={user} />
+          {fixSroll()}
         </>
       ) : (
-        <Button onClick={signInWithGoogle}> Sign in with Google </Button>
+        <>
+          <Header />
+          <Login />
+        </>
       )}
     </div>
   );

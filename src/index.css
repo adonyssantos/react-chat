@@ -1,13 +1,59 @@
-body {
-  margin: 0;
+/*------------------------------- Importamos Bootstrap ---------------------------*/
+
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css');
+
+/*------------------------------- Importamos Bootstrap ---------------------------*/
+
+@import './styles/colors.css';
+
+/*------------------------------- Estilos Generales ---------------------------*/
+
+html{
+  width: 100%;
+  height: 100%;
+}
+
+body{
+  width: 100%;
+  /* height: 100%; */
+
+  margin: 0px;
+  padding-top: 3.5%;
+
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background: url(https://www.xtrafondos.com/wallpapers/resoluciones/19/noche-cielo-estrellas-y-cometa_1920x1080_3036.jpg);
+  background-size: cover;
+  background-position-y: -50px;
+  background-attachment: fixed;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body ::selection{
+  background-color: black;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f2f2f2; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #555555; 
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #242424; 
 }
