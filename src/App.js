@@ -1,9 +1,9 @@
-import { Channel, Login, Header } from "./components/";
+import { Channel, Button } from "./components/";
 import { useAuthState } from "./hooks";
 import { firebase } from "./config/firebase";
-import "./App.css";
-import renderLoading from "./functions/renderLoading";
-import fixSroll from "./functions/fixSroll";
+import renderLoading from "./helpers/renderLoading";
+import fixSroll from "./helpers/fixSroll";
+import { signInWithGoogle, signOut } from "./security";
 
 function App() {
   const { itializing, user } = useAuthState(firebase.auth());
@@ -12,14 +12,16 @@ function App() {
       {renderLoading(itializing)}
       {user ? (
         <>
-          <Header />
+          <header className="menu">
+            <h1>Infinity Chat</h1>
+            <Button onClick={signOut}> Salir </Button>
+          </header>
           <Channel user={user} />
           {fixSroll()}
         </>
       ) : (
         <>
-          <Header />
-          <Login />
+          <Button onClick={signInWithGoogle}>Iniciar Sesión</Button>
         </>
       )}
     </div>

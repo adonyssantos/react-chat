@@ -1,9 +1,8 @@
-import "../styles/Button.css";
+// import "../styles/Button.css";
 
 const Button = ({ onClick = null, children = null }) => (
   <button className="boton" onClick={onClick}>
-    {" "}
-    {children}{" "}
+    {children}
   </button>
 );
 

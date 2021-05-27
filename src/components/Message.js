@@ -1,5 +1,5 @@
 import { formatRelative } from "date-fns";
-import "../styles/Message.css";
+// import "../styles/Message.css";
 
 const formatDate = (date) => {
   let formattedDate = "";
