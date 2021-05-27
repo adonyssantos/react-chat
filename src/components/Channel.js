@@ -76,16 +76,13 @@ const Channel = ({ user = null }) => {
           autoComplete="off"
         />
 
-        {/* <button className="btn-emoji"></button> */}
-
         <button
           className="boton btn-send"
           type="submit"
           disabled={!newMessage}
           onClick={fixSroll()}
         >
-          {" "}
-          Enviar{" "}
+          Enviar
         </button>
       </form>
     </>

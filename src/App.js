@@ -12,17 +12,19 @@ function App() {
       {renderLoading(itializing)}
       {user ? (
         <>
-          <header className="menu">
+          <header>
             <h1>Infinity Chat</h1>
-            <Button onClick={signOut}> Salir </Button>
+            <Button styles="btn logout" onClick={signOut}> Salir </Button>
           </header>
           <Channel user={user} />
           {fixSroll()}
         </>
       ) : (
-        <>
-          <Button onClick={signInWithGoogle}>Iniciar Sesión</Button>
-        </>
+        <div className="btn-container-login">
+          <Button styles="btn login" onClick={signInWithGoogle}>
+            Iniciar Sesión
+          </Button>
+        </div>
       )}
     </div>
   );

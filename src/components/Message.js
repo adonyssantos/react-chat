@@ -29,13 +29,16 @@ const Message = ({
           title="{text}"
         />
       ) : null}
-      {displayName ? <span className="name-user">{displayName}</span> : null}
-      {createdAt?.seconds ? (
-        <span className="date-user">
-          {formatDate(new Date(createdAt.seconds * 1000))}
-        </span>
-      ) : null}
-      <p className="mensaje-user">{text}</p>
+
+      <div className="content-user">
+        {displayName ? <span className="name-user">{displayName}</span> : null}
+        {createdAt?.seconds ? (
+          <span className="date-user">
+            {formatDate(new Date(createdAt.seconds * 1000))}
+          </span>
+        ) : null}
+        <p className="mensaje-user">{text}</p>
+      </div>
     </div>
   );
 };

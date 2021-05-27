@@ -1,7 +1,7 @@
 // import "../styles/Button.css";
 
-const Button = ({ onClick = null, children = null }) => (
-  <button className="boton" onClick={onClick}>
+const Button = ({ onClick = null, children = null, styles = null }) => (
+  <button className={styles} onClick={onClick}>
     {children}
   </button>
 );
