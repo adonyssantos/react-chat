@@ -6,7 +6,6 @@
 - Estheixys #4 (Fork)
 - Rusbert #16 (Colaborador)
 
-
 ## Resumen:
 
 En esta parte del proyecto hemos creado la App con React y descargamos los paquetes de Firestore, luego la subimos al repositorio remoto (GitHub), despues agregamos al colaborador e hicimos Fork. 
@@ -17,9 +16,9 @@ La actividad Fork le permite crear varias transiciones salientes para llevar a c
 
 Por ejemplo, puede utilizar la actividad después de una consulta para realizar dos acciones en paralelo:
 
-Guarde el resultado de la consulta en una audiencia,
-Ejecute una segmentación en el resultado para entregar varios envíos.
-También puede utilizar la actividad en el contexto de la creación de contenido y la automatización de entrega.
+- Guarde el resultado de la consulta en una audiencia,
+- Ejecute una segmentación en el resultado para entregar varios envíos.
+- También puede utilizar la actividad en el contexto de la creación de contenido y la automatización de entrega.
 
 ## Flujo de Trabajo de un Colaborador
 
