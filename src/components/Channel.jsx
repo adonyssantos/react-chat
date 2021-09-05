@@ -1,3 +1,4 @@
+import React from 'react';
 import { useEffect, useState, useRef } from 'react';
 import { db, firebase } from '../config/firebase';
 import Message from './Message';
@@ -10,9 +11,9 @@ const Channel = ({ user = null }) => {
   useEffect(() => {
     const query = db.collection('messages').orderBy('createdAt').limit(100);
 
-    const unsubscribe = query.onSnapshot(querySnapshot => {
+    const unsubscribe = query.onSnapshot((querySnapshot) => {
       //Obtiene todos los mensajes desde la bd con su ID.
-      const data = querySnapshot.docs.map(doc => ({
+      const data = querySnapshot.docs.map((doc) => ({
         ...doc.data(),
         id: doc.id,
       }));
@@ -27,14 +28,14 @@ const Channel = ({ user = null }) => {
 
   const { uid, displayName, photoURL } = user;
   const [newMessage, setNewMessage] = useState('');
-  const handleMessageOnChange = e => {
+  const handleMessageOnChange = (e) => {
     e.preventDefault();
     setNewMessage(e.target.value);
   };
 
   const messagesRef = db.collection('messages');
 
-  const handleOnSubmit = e => {
+  const handleOnSubmit = (e) => {
     e.preventDefault();
 
     const trimmedMessage = newMessage.trim();
@@ -58,10 +59,10 @@ const Channel = ({ user = null }) => {
   }, [inputRef]);
 
   return (
-    <>
+    <div>
       <div className='fake-header'></div>
       <div className='messages-container' onLoad={fixScroll}>
-        {messages.map(message => (
+        {messages.map((message) => (
           <p key={message.id}>
             <Message {...message} />
           </p>
@@ -70,10 +71,7 @@ const Channel = ({ user = null }) => {
 
       <div className='fake-typing-box'></div>
 
-      <form
-        className='nav bg-dark-blue form typing-box'
-        onSubmit={handleOnSubmit}
-      >
+      <form className='nav bg-dark-blue form typing-box' onSubmit={handleOnSubmit}>
         <input
           className='mensaje bg-light-blue color-light'
           ref={inputRef}
@@ -93,7 +91,7 @@ const Channel = ({ user = null }) => {
           Enviar
         </button>
       </form>
-    </>
+    </div>
   );
 };
 
