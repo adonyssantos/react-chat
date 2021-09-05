@@ -63,9 +63,9 @@ const Channel = ({ user = null }) => {
       <div className='fake-header'></div>
       <div className='messages-container' onLoad={fixScroll}>
         {messages.map((message) => (
-          <p key={message.id}>
+          <span key={message.id}>
             <Message {...message} />
-          </p>
+          </span>
         ))}
       </div>
 
