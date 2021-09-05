@@ -1,6 +1,7 @@
 import { useEffect, useState, useRef } from 'react';
 import { db, firebase } from '../config/firebase';
 import Message from './Message';
+import { fixScroll } from './helpers';
 import '../styles/components/Channel.css';
 
 const Channel = ({ user = null }) => {
@@ -59,7 +60,7 @@ const Channel = ({ user = null }) => {
   return (
     <>
       <div className='fake-header'></div>
-      <div className='messages-container'>
+      <div className='messages-container' onLoad={fixScroll}>
         {messages.map(message => (
           <p key={message.id}>
             <Message {...message} />
@@ -87,6 +88,7 @@ const Channel = ({ user = null }) => {
           className='send-btn btn-send bg-dark-blue color-light'
           type='button'
           disabled={!newMessage}
+          onClick={fixScroll}
         >
           Enviar
         </button>
