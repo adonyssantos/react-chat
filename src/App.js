@@ -4,6 +4,7 @@ import { firebase } from "./config/firebase";
 import renderLoading from "./helpers/renderLoading";
 import fixSroll from "./helpers/fixSroll";
 import { signInWithGoogle, signOut } from "./security";
+import './styles/App.css'
 
 function App() {
   const { itializing, user } = useAuthState(firebase.auth());

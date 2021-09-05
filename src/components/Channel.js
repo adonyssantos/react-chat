@@ -2,7 +2,7 @@ import { useEffect, useState, useRef } from "react";
 import { db, firebase } from "../config/firebase";
 import Message from "./Message";
 import fixSroll from "../helpers/fixSroll";
-// import "../styles/Channel.css";
+import "../styles/components/Channel.css";
 
 const Channel = ({ user = null }) => {
   const [messages, setMessages] = useState([]);

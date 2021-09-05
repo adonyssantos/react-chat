@@ -1,4 +1,4 @@
-// import "../styles/Button.css";
+import "../styles/components/Button.css";
 
 const Button = ({ onClick = null, children = null, styles = null }) => (
   <button className={styles} onClick={onClick}>
