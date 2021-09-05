@@ -21,7 +21,7 @@ const Message = ({ createdAt = null, text = '', displayName = '', photoURL = '' 
       {photoURL ? <img className='photo-user' src={photoURL} alt='Avatar' title='{text}' /> : null}
       <div className='content-user'>
         {displayName ? <span className='name-user color-dark-blue bold'>{displayName}</span> : null}
-        {createdAt.seconds ? (
+        {createdAt ? (
           <span className='date-user color-dark-blue bold'>{formatDate(new Date(createdAt.seconds * 1000))}</span>
         ) : null}
         <p className='mensaje-user color-light'>{text}</p>

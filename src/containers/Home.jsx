@@ -1,7 +1,7 @@
 import React from 'react';
 import { Channel, Layout } from '../components';
 
-function Home(user) {
+function Home({ user }) {
   return (
     <Layout>
       <Channel user={user} />
