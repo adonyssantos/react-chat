@@ -1,10 +1,9 @@
 /* Message */
 .user {
-  max-width: 90%;
   display: flex;
   align-items: center;
-  background: rgba(15, 215, 161, 0.3);
   border-radius: 7px;
+  border: 2px solid #f2efeb;
   padding: 10px;
 }
 
@@ -18,20 +17,10 @@
   display: inline-block;
 }
 
-.user .name-user {
-  color: #fff;
-}
-
 .user .name-user::after {
-  content: ' ● ';
-  color: #fff;
-}
-
-.user .date-user {
-  color: #fff;
+  content: ' - ';
 }
 
 .user .mensaje-user {
   display: block;
-  color: #fff;
 }

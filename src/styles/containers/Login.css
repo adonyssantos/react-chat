@@ -1,0 +1,13 @@
+/* Login */
+.btn-container-login {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login {
+  font-size: 3rem;
+  max-width: 450px;
+  height: 80px;
+}

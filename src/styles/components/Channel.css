@@ -1,8 +1,50 @@
 /* Channel */
+.fake-header {
+  height: 60px;
+}
+
 .messages-container {
-  width: 100%;
+  width: 90%;
+  margin: 20px auto;
+}
+
+.typing-box {
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  margin: 20px;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 70px;
+}
+
+input {
+  outline: none;
+  border-radius: 100px;
+  border: 2px solid #f2efeb;
+  width: 85%;
+  padding: 11px;
+  margin: 15px;
+}
+
+input::placeholder,
+.send-btn:disabled {
+  color: #f2efebb2;
+}
+
+.send-btn {
+  transition: all 650ms;
+  padding: 15px;
+  border: none;
+  font-size: 2.4rem;
+}
+
+.send-btn:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.fake-typing-box {
+  height: 70px;
 }
