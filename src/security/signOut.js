@@ -1,4 +1,4 @@
-import { firebase } from "../config/firebase";
+import { firebase } from '../config/firebase';
 
 const signOut = async () => {
   try {
