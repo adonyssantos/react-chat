@@ -1,7 +1,18 @@
 import React from 'react';
+import '../styles/components/Login.css';
 
 const Loading = () => {
-  return <h3>Loading...</h3>;
+  return (
+    <div className='loading'>
+      <div class='loading-ring'>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <h3>Por favor, espere!</h3>
+    </div>
+  );
 };
 
 export default Loading;
