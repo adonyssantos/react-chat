@@ -4,7 +4,7 @@ import '../styles/components/Login.css';
 const Loading = () => {
   return (
     <div className='loading'>
-      <div class='loading-ring'>
+      <div className='loading-ring'>
         <div></div>
         <div></div>
         <div></div>

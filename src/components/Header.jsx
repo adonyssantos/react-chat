@@ -6,7 +6,7 @@ import '../styles/components/Header.css';
 const Header = () => {
   return (
     <header>
-      <nav class='nav bg-dark-blue'>
+      <nav className='nav bg-dark-blue'>
         <h1 className='color-light-blue'>Infinity Chat</h1>
         <Button styles='btn logout color-light-red' onClick={signOut}>
           Salir
