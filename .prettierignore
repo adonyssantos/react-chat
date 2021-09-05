@@ -1,0 +1,7 @@
+/coverage
+/dist
+/public
+/node_modules
+/test/fixtures
+/test/output
+CHANGELOG.md
