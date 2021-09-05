@@ -1,5 +1,6 @@
 /* Palm Tree CSS Library */
 @import url('https://puzzlerdev.github.io/palm-tree-css-library/style.min.css');
+@import './scroll.css';
 
 * {
   margin: 0;
