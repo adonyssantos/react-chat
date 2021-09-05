@@ -33,6 +33,11 @@ input::placeholder,
   color: #f2efebb2;
 }
 
+.send-btn:disabled:hover {
+  cursor: not-allowed;
+  text-decoration: none;
+}
+
 .send-btn {
   transition: all 650ms;
   padding: 15px;
